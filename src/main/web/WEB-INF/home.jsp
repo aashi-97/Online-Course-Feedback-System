@@ -36,9 +36,6 @@
            <h1 style="font-color: black;font-size: 50px;">COURSE FEEDBACK SYSTEM</h1>
        </div>
    </header>
-
-
-
-
 </body>
 </html>
+
