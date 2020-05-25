@@ -5,6 +5,7 @@
   Time: 02:27
   To change this template use File | Settings | File Templates.
 --%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -25,11 +26,11 @@
                padding: 5px 20px;transition: 0.6s ease;"
                href ="#">HOME</a></li>
                <li style="display: inline-block"><a style="text-decoration: none; color: black;
-               padding: 5px 20px;transition: 0.6s ease;" href ="#">ABOUT</a></li>
+               padding: 5px 20px;transition: 0.6s ease;" href ="about">ABOUT</a></li>
                <li style="display: inline-block"><a style="text-decoration: none; color: black;
-               padding: 5px 20px;transition: 0.6s ease;" href ="#">ADMIN</a></li>
+               padding: 5px 20px;transition: 0.6s ease;" href ="admin">ADMIN</a></li>
                <li style="display: inline-block"><a style="text-decoration: none; color: black;
-               padding: 5px 20px;transition: 0.6s ease;" href ="#">STUDENT</a></li>
+               padding: 5px 20px;transition: 0.6s ease;" href ="student">STUDENT</a></li>
            </ul>
        </div>
        <div style="position: absolute;top: 50%;left: 30%;transform: translate(70px,20px);"class="title">
