@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Feedback Page</title>
+    <title>Feedback PAge</title>
 </head>
 <body>
 <form>
