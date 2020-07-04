@@ -1,34 +1,41 @@
 package com.example.demo.model;
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name="admin")
-public class Admin {
+public class Admin implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private int adminId;
+
+    @Column
+    @NotNull
     private String email;
+
+    @Column
+    @NotNull
     private String password;
 
     public Admin(){
 
     }
 
-    public Admin(int id, String email, String password) {
-        super();
-        this.id = id;
+    public Admin(String email, String password) {
         this.email = email;
         this.password = password;
     }
 
-    public int getId() {
-        return id;
+    public int getAdminId() {
+        return adminId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setAdminId(int admin_id) {
+        this.adminId = admin_id;
     }
 
     public String getEmail() {
@@ -50,7 +57,7 @@ public class Admin {
     @Override
     public String toString() {
         return "admin{" +
-                "id=" + id +
+                "adminId=" + adminId +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 '}';

@@ -82,16 +82,16 @@
 <body>
 
 <div class="navbar">
-    <a href="home">Home</a>
-    <a href="about">About</a>
-    <a href="register">Sign Up</a>
+    <a href="home.jsp">Home</a>
+    <a href="about.jsp">About</a>
+    <a href="register.jsp">Sign Up</a>
     <div class="dropdown">
         <button class="dropbtn">Login
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="login">Student</a>
-            <a href="adminlogin">Admin</a>
+            <a href="login.jsp">Student</a>
+            <a href="adminlogin.jsp">Admin</a>
         </div>
     </div>
 </div>

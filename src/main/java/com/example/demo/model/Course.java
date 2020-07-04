@@ -1,41 +1,59 @@
 package com.example.demo.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.sun.istack.NotNull;
+
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.List;
 
 @Entity
-@Table(name="courses")
-public class Course {
+@Table(name="course")
+public class Course implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private long courseId;
+    @Column
+    @NotNull
     private String coursename;
-    private String courseid;
+
+    @Column
+    @NotNull
+    private String subjectid;
+
+    @Column
+    @NotNull
     private String facultyname;
-    private int contactnumber;
+
+    @Column
+    @NotNull
+    private String contactnumber;
+
+    @Column
+    @NotNull
     private String department;
-    private String university;
+
 
     public Course(){
 
     }
 
-    public Course(String coursename, String courseid, String facultyname, int contactnumber, String department, String university) {
+    public Course(String coursename,String subjectid, String facultyname, String contactnumber, String department) {
         this.coursename = coursename;
-        this.courseid = courseid;
+        this.subjectid=subjectid;
         this.facultyname = facultyname;
         this.contactnumber = contactnumber;
         this.department = department;
-        this.university = university;
     }
 
-    public int getId() {
-        return id;
+    public long getCourseId() {
+        return courseId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCourseId(long course_id) {
+        this.courseId = course_id;
     }
 
     public String getCoursename() {
@@ -46,12 +64,12 @@ public class Course {
         this.coursename = coursename;
     }
 
-    public String getCourseid() {
-        return courseid;
+    public String getSubjectid() {
+        return subjectid;
     }
 
-    public void setCourseid(String courseid) {
-        this.courseid = courseid;
+    public void setSubjectid(String subjectid) {
+        this.subjectid = subjectid;
     }
 
     public String getFacultyname() {
@@ -62,11 +80,11 @@ public class Course {
         this.facultyname = facultyname;
     }
 
-    public int getContactnumber() {
+    public String getContactnumber() {
         return contactnumber;
     }
 
-    public void setContactnumber(int contactnumber) {
+    public void setContactnumber(String contactnumber) {
         this.contactnumber = contactnumber;
     }
 
@@ -78,24 +96,17 @@ public class Course {
         this.department = department;
     }
 
-    public String getUniversity() {
-        return university;
-    }
 
-    public void setUniversity(String university) {
-        this.university = university;
-    }
 
     @Override
     public String toString() {
         return "Course{" +
-                "id=" + id +
+                "courseId=" + courseId +
                 ", coursename='" + coursename + '\'' +
-                ", courseid='" + courseid + '\'' +
+                ", subjectid='" + subjectid + '\'' +
                 ", facultyname='" + facultyname + '\'' +
-                ", contactnumber=" + contactnumber +
+                ", contactnumber='" + contactnumber + '\'' +
                 ", department='" + department + '\'' +
-                ", university='" + university + '\'' +
                 '}';
     }
 }

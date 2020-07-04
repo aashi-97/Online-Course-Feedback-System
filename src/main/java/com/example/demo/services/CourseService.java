@@ -2,6 +2,7 @@ package com.example.demo.services;
 
 import com.example.demo.Repository.CourseRepository;
 import com.example.demo.model.Course;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -10,45 +11,29 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-@Transactional
 public class CourseService {
 
-    private final CourseRepository courseRepository;
+    @Autowired
+    CourseRepository courseRepository;
 
-    public CourseService(CourseRepository courseRepository){
-        this.courseRepository = courseRepository;
-    }
-
-    public void saveMyCourse(Course course){
+    public void save(Course course){
         courseRepository.save(course);
     }
 
-    public List<Course> showAddedCourses(){
-        List<Course> courses = new ArrayList<Course>();
-        for (Course course: courseRepository.findAll()){
-            courses.add(course);
-        }
-        return courses;
+    public List<Course> findAll(){
+        List<Course> course;
+        course = courseRepository.findAll();
+        return course;
     }
 
-    public List<Course> showfeedbackCourses(){
-        List<Course> feedbackcourses = new ArrayList<Course>();
-        for (Course feedbackcourse: courseRepository.findAll()){
-            feedbackcourses.add(feedbackcourse);
-        }
-        return feedbackcourses;
+    public Course findById(long course_id){
+        Course course=courseRepository.findById(course_id).orElse(null);
+        return course;
     }
 
-
-    public void deleteCourse(int id){
-        courseRepository.deleteById(id);
+    public void deleteById(long course_id)
+    {
+        courseRepository.deleteById(course_id);
     }
 
-    public Optional<Course> editCourse(int id){
-        return courseRepository.findById(id);
-    }
-
-    public Course findByContactnumberAndCourseid(String contactnumber, String courseid){
-        return courseRepository.findByContactnumberAndCourseid(contactnumber,courseid);
-    }
 }

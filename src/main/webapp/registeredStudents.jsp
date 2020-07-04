@@ -22,7 +22,12 @@
                 <th>Id</th>
                 <th>UserName</th>
                 <th>rollnumber</th>
+                <th>programme</th>
+                <th>department</th>
+                <th>email</th>
+                <th>semester</th>
                 <th>Password</th>
+                <th>Feedback-result</th>
                 <th>Delete</th>
                 <th>Edit</th>
             </tr>
@@ -33,7 +38,12 @@
                     <td>${user.id}</td>
                     <td>${user.username}</td>
                     <td>${user.rollnumber}</td>
+                    <td>${user.programme}</td>
+                    <td>${user.department}</td>
+                    <td>${user.email}</td>
+                    <td>${user.semester}</td>
                     <td>${user.password}</td>
+                    <td><a href="/feedbackresult-user?id=${user.id}">Result</a></td>
                     <td><a href="/delete-user?id=${user.id }"><i class="icon-trash"></i></a></td>
                     <td><a href="/edit-user?id=${user.id }"><i class="icon-pencil"></i></a></td>
                 </tr>

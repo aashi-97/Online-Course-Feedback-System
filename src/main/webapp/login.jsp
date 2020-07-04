@@ -8,32 +8,25 @@
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="Expires" content="sat, 01 Dec 2001 00:00:00 GMT">
     <title>Log in</title>
-    <link href="static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="static/css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
 <div class="container text-center">
     <h3>User Login</h3>
     <hr>
-    <form class="form-horizontal" method="POST" action="/login-user">
-        <c:if test="${not empty error }">
-            <div class= "alert alert-danger">
-                <c:out value="${error }"></c:out>
-            </div>
-        </c:if>
+    <form class="form-horizontal" method="get" action="/login/verifyuser">
         <div class="form-group">
-            <label class="control-label col-md-3">Username</label>
+            <label class="control-label col-md-3">Roll Number</label>
             <div class="col-md-7">
-                <input type="text" class="form-control" name="username"
-                       value="${user.username }" />
+                <input type="text" class="form-control" name="rollnumber"/>
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-md-3">Password</label>
             <div class="col-md-7">
-                <input type="password" class="form-control" name="password"
-                       value="${user.password }" />
+                <input type="password" class="form-control" name="password"/>
             </div>
         </div>
         <div class="form-group ">
@@ -43,7 +36,7 @@
 </div>
 
 
-<script src="static/js/jquery-1.11.1.min.js"></script>
-<script src="static/js/bootstrap.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
