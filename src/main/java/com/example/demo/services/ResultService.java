@@ -34,8 +34,8 @@ public class ResultService {
         return resultList;
     }
 
-    public List<Output> groupBy(){
-        return resultRepository.groupBy();
+    public List<Output> groupBy(String dname){
+        return resultRepository.groupBy(dname);
     }
 
     public List<Result> findBycname(String cname){
@@ -44,6 +44,11 @@ public class ResultService {
 
     public List<CourseOutput> findPointsbycname(String cname){
         return resultRepository.findPointsbycname(cname);
+
+    }
+
+    public List<DeptReport> bestcourseindept(String dname){
+        return resultRepository.bestcourseindept(dname);
 
     }
 

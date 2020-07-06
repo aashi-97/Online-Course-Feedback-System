@@ -35,9 +35,9 @@ public class User implements Serializable {
     @NotNull
     private String email;
 
-    @Column
-    @NotNull
-    private String semester;
+//    @Column
+//    @NotNull
+//    private String semester;
 
     @Column
     @NotNull
@@ -52,13 +52,13 @@ public class User implements Serializable {
     }
 
 
-    public User(String username, String rollnumber, String programme, String department, String email, String semester, String password) {
+    public User(String username, String rollnumber, String programme, String department, String email, String password) {
         this.username = username;
         this.rollnumber = rollnumber;
         this.programme = programme;
         this.department = department;
         this.email = email;
-        this.semester = semester;
+//        this.semester = semester;
         this.password = password;
     }
 
@@ -110,13 +110,13 @@ public class User implements Serializable {
         this.email = email;
     }
 
-    public String getSemester() {
-        return semester;
-    }
-
-    public void setSemester(String semester) {
-        this.semester = semester;
-    }
+//    public String getSemester() {
+//        return semester;
+//    }
+//
+//    public void setSemester(String semester) {
+//        this.semester = semester;
+//    }
 
     public String getPassword() {
         return password;
@@ -143,7 +143,7 @@ public class User implements Serializable {
                 ", programme='" + programme + '\'' +
                 ", department='" + department + '\'' +
                 ", email='" + email + '\'' +
-                ", semester='" + semester + '\'' +
+//                ", semester='" + semester + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }

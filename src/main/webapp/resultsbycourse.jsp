@@ -14,7 +14,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="Expires" content="sat, 01 Dec 2001 00:00:00 GMT">
-    <title>Results By Course</title>
+    <title>All Responses</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -34,6 +34,7 @@
                 <th>password</th>
                 <th>ResultId</th>
                 <th>Print Result</th>
+
             </tr>
             </thead>
             <tbody>

@@ -17,16 +17,22 @@
     <h3>User Login</h3>
     <hr>
     <form class="form-horizontal" method="get" action="/login/verifyuser">
+        <c:if test="${not empty error}">
+            <div class="alert alert-danger">
+                <h3>${error}</h3>
+                <c:remove var="error"/>
+            </div>
+        </c:if>
         <div class="form-group">
             <label class="control-label col-md-3">Roll Number</label>
             <div class="col-md-7">
-                <input type="text" class="form-control" name="rollnumber"/>
+                <input type="text" class="form-control" name="rollnumber" placeholder="123AB"/>
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-md-3">Password</label>
             <div class="col-md-7">
-                <input type="password" class="form-control" name="password"/>
+                <input type="password" class="form-control" name="password" placeholder="pass12"/>
             </div>
         </div>
         <div class="form-group ">

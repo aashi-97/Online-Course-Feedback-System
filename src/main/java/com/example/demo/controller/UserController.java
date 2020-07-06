@@ -29,7 +29,7 @@ public class UserController {
             @RequestParam String programme,
             @RequestParam String department,
             @RequestParam String email,
-            @RequestParam String semester,
+//            @RequestParam String semester,
             @RequestParam String password,
             HttpSession session
     ){
@@ -45,19 +45,19 @@ public class UserController {
                 session.setAttribute(email, u.getEmail());
                 RedirectView redirectView = new RedirectView();
                 redirectView.setContextRelative(true);
-                redirectView.setUrl("/failed.jsp");
+                redirectView.setUrl("/failedlogin.jsp");
                 return redirectView;
             } else if ((rollnumber).equals(u.getRollnumber())) {
                 session.setAttribute(rollnumber, u.getRollnumber());
                 RedirectView redirectView = new RedirectView();
                 redirectView.setContextRelative(true);
-                redirectView.setUrl("/failed.jsp");
+                redirectView.setUrl("/failedlogin.jsp");
                 return redirectView;
             } else if ((email).equals(u.getEmail())) {
                 session.setAttribute(email, u.getEmail());
                 RedirectView redirectView = new RedirectView();
                 redirectView.setContextRelative(true);
-                redirectView.setUrl("/failed.jsp");
+                redirectView.setUrl("/failedlogin.jsp");
                 return redirectView;
             }
         }
@@ -68,11 +68,12 @@ public class UserController {
         user1.setEmail(email);
         user1.setProgramme(programme);
         user1.setPassword(password);
-        user1.setSemester(semester);
+//        user1.setSemester(semester);
 
         userService.save(user1);
         RedirectView redirectView = new RedirectView();
         redirectView.setContextRelative(true);
+        session.setAttribute("success","Successfully Registered!");
         redirectView.setUrl("/home.jsp");
         return redirectView;
     }

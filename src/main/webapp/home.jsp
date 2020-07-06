@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
@@ -12,6 +13,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<%--    <link href="css/bootstrap.min.css" rel="stylesheet">--%>
+<%--    <link href="css/style.css" rel="stylesheet">--%>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -96,10 +99,16 @@
     </div>
 </div>
 
+        <c:if test="${not empty success}">
+            <div class="alert alert-success">
+                <h3 style="color: #1fc058">${success}</h3>
+                <c:remove var="success"/>
+            </div>
+        </c:if>
 
 
        <div style="position: absolute;top: 50%;left: 30%;transform: translate(70px,20px);"class="title">
-           <h1 style="font-color: black;font-size: 50px;">COURSE FEEDBACK SYSTEM</h1>
+           <h1 style="font-color: black;font-size: 50px;">COURSE FEEDBACK and ANALYSIS SYSTEM</h1>
        </div>
 </body>
 </html>

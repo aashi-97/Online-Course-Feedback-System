@@ -4,8 +4,10 @@ import com.example.demo.Repository.CourseRepository;
 import com.example.demo.Repository.ResultRepository;
 import com.example.demo.model.Course;
 import com.example.demo.model.CourseOutput;
+import com.example.demo.model.Department;
 import com.example.demo.model.Result;
 import com.example.demo.services.CourseService;
+import com.example.demo.services.DepartmentService;
 import com.example.demo.services.ResultService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +25,9 @@ public class CourseController {
     CourseService courseService;
 
     @Autowired
+    DepartmentService departmentService;
+
+    @Autowired
     CourseRepository courseRepository;
 
     @Autowired
@@ -30,6 +35,17 @@ public class CourseController {
 
     @Autowired
     ResultService resultService;
+
+    @RequestMapping(value="/dept/addcourse/{id}",method = RequestMethod.GET)
+    public RedirectView addByDeptId(@PathVariable(value = "id") long dept_id,HttpSession session){
+        Department department = departmentService.findById(dept_id);
+        session.setAttribute("deptname",department.getDeptname());
+        RedirectView rv = new RedirectView();
+        String rurl = "/addcourse.jsp?id="+Long.toString(department.getDeptId());
+        rv.setUrl(rurl);
+        return rv;
+    }
+
 
     @RequestMapping(value="/addcourse",method = RequestMethod.POST)
     public RedirectView addcourse(
@@ -83,12 +99,13 @@ public class CourseController {
         return redirectView;
     }
 
-    @GetMapping("/viewcourse")
-    public RedirectView getAllCourses(HttpSession session){
-        List<Course> courseList = courseService.findAll();
+    @GetMapping("/viewcoursebydept/{id}")
+    public RedirectView getAllCourses(@PathVariable(value = "id") long dept_id, HttpSession session){
+        Department department = departmentService.findById(dept_id);
+        List<Course> courseList = courseService.findByDept(department.getDeptname());
         session.setAttribute("courseList",courseList);
         RedirectView rv= new RedirectView();
-        String rurl = "/addedcourses.jsp";
+        String rurl = "/addedcourses.jsp?id="+Long.toString(department.getDeptId());
         rv.setUrl(rurl);
         return rv;
     }

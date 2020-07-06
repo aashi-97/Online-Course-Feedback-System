@@ -26,31 +26,33 @@
     </p>
     <form method="POST" action="/results/add/<%=id%>">
         <form :hidden path="id"/>
-<%--        <input type="hidden" name="result_id" value="${result.result_id }" />--%>
         <label for="dname">Name of the Department:</label>
         <select id="dname" name="dname">
-            <c:forEach items="${courseList}" var="c">
-                <option value="${c.department}">${c.department}</option>
-            </c:forEach>
+                <option value="${dept}">${dept}</option>
         </select><br><br>
         <label for="session">Session:</label>
-        <input type="text" id="session" name="session"><br> <br>
+        <input type="text" id="session" name="session" placeholder="2020-21"><br> <br>
         <label for="class">Class:</label>
-        <input type="text" id="class" name="cclass"><br><br>
+        <select id="class" name="cclass">
+            <option value="1st year">1st year</option>
+            <option value="2nd year">2nd year</option>
+            <option value="3rd year">3rd year</option>
+            <option value="4th year">4th year</option>
+        </select><br><br>
         <label for="sem">Semester:</label>
-        <input type="text" id="sem" name="sem"><br><br>
+        <input type="number" id="sem" name="sem" min="1" max="8"><br><br>
         <label for="cname">Name of course(with course code):</label>
         <select id="cname" name="cname">
             <c:forEach items="${courseList}" var="c">
-            <option value="${c.coursename}">${c.coursename}</option>
+            <option value="${c.coursename}">${c.coursename} ${c.subjectid}</option>
             </c:forEach>
         </select><br><br>
         <label for="tname">Name of the Teacher:</label>
-        <input type="text" id="tname" name="tname"><br><br>
+        <input type="text" id="tname" name="tname" placeholder="abc"><br><br>
         <label for="totallec">Total number of Lectures delivered by the Teacher in the Semester:</label>
-        <input type="text" id="totallec" name="totallec"><br><br>
+        <input type="text" id="totallec" name="totallec" placeholder="enter int value only"><br><br>
         <label for="lecattended">Number of Lectures attended by the Student filling the form with percentage:</label>
-        <input type="text" id="lecattended" name="lecattended"><br><br>
+        <input type="text" id="lecattended" name="lecattended" placeholder="enter int only"><br><br>
         <hr>
     <p>1. Availability of Lecture Plan in the beginning of the Semester.</p>
         <input type="radio" name="ques1" value="5">Excellent<br>

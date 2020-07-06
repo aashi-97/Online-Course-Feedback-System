@@ -1,5 +1,7 @@
+var deptId = document.getElementById("temp").getAttribute("val");
+
 $.ajax({
-    url : 'piechart',
+    url : 'piechart'+'/'+ deptId,
     success : function (result) {
         var series = [];
         var data = [];
@@ -28,7 +30,7 @@ function piechart(series) {
             type: 'pie'
         },
         title: {
-            text: 'Average Result of Every Course'
+            text: 'Average Result of Every course in this Department'
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.y}</b>'

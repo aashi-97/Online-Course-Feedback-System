@@ -25,19 +25,19 @@
             <div class="form-group">
                 <label class="control-label col-md-3">Student name</label>
                 <div class="col-md-7">
-                    <input type="text" class="form-control" name="username"/>
+                    <input type="text" class="form-control" name="username" placeholder="name" required/>
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-md-3">Roll Number</label>
                 <div class="col-md-7">
-                    <input type="text" class="form-control" name="rollnumber"/>
+                    <input type="text" class="form-control" name="rollnumber" placeholder="123AB" required/>
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-md-3">Programme</label>
                 <div class="col-md-7">
-                    <select class="form-control" name="programme">
+                    <select class="form-control" name="programme" required>
                         <option value="B.Tech">B.Tech</option>
                         <option value="MCA">MCA</option>
                     </select>
@@ -46,32 +46,33 @@
             <div class="form-group">
                 <label class="control-label col-md-3">Department</label>
                 <div class="col-md-7">
-                    <select class="form-control" name = "department" >
-                        <option value = "CS">Cs</option>
-                        <option value = "Mech">Mech</option>
-                        <option value = "civil">civil</option>
-                        <option value = "electronics">Electronics</option>
-                        <option value = "chemical eng">chemical eng</option>
-                        <option value = "chemical tech">chemical tech</option>
+                    <select class="form-control" name = "department" required>
+<%--                        <option value= "">Select</option>--%>
+                        <option value = "Computer Science and Information Technology">Computer Science and Information Technology</option>
+                        <option value = "Mechanical Engineering">Mechanical Engineering</option>
+                        <option value = "Electronics and Electrical Engineering">Electronics and Electrical Engineering</option>
+                        <option value = "Civil Engineering">Civil Engineering</option>
+                        <option value = "Chemical Engineering">Chemical Engineering</option>
+                        <option value = "Chemical Technology">Chemical Technology</option>
                     </select>
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-md-3">Email</label>
                 <div class="col-md-7">
-                    <input type="text" class="form-control" name="email"/>
+                    <input type="email" class="form-control" name="email" pattern=".+@hbtu.ac.in" placeholder="123AB@hbtu.ac.in" title="Please provide only college e-mail address" required/>
                 </div>
             </div>
-            <div class="form-group">
-                <label class="control-label col-md-3">Semester</label>
-                <div class="col-md-7">
-                    <input type="text" class="form-control" name="semester"/>
-                </div>
-            </div>
+<%--            <div class="form-group">--%>
+<%--                <label class="control-label col-md-3">Semester</label>--%>
+<%--                <div class="col-md-7">--%>
+<%--                    <input type="text" class="form-control" name="semester"/>--%>
+<%--                </div>--%>
+<%--            </div>--%>
             <div class="form-group">
                 <label class="control-label col-md-3">Password</label>
                 <div class="col-md-7">
-                    <input type="password" class="form-control" name="password"/>
+                    <input type="password" class="form-control" name="password" placeholder="pass12" required/>
                 </div>
             </div>
             <div class="form-group ">

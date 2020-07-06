@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: tripti
@@ -58,11 +59,13 @@
     </div>
 </div>
 
-<a href="addcourse.jsp">Add Course</a>
-<a href="/course/viewcourse"> Show All Courses</a>
-<%--<a href ="/results/viewcourseAverage">Registered students</a>--%>
-<a href="chart.jsp">Overall Average</a>
-<a href="/overall-report">Overall Analysis Report</a>
+
+
+<%--<a href="/course/viewcourse"> Show All Courses</a>--%>
+
+<%--<a href="chart.jsp">Overall Average</a>--%>
+
+<a href="/overall-report">Overall Feedback Analysis Report</a>
 
 <div class="container text-center" id="tasksDiv">
     <h3>All Departments</h3>
@@ -74,82 +77,20 @@
                 <th>Id</th>
                 <th>Departments</th>
                 <th>Associated Courses</th>
+                <th>Add Course</th>
                 <th>Report</th>
             </tr>
             </thead>
             <tbody>
+            <c:forEach var="d" items="${departments}">
                 <tr>
-                    <td>1</td>
-                    <td>Computer Science and Information Technology</td>
-                    <td><a href=""> Courses</a></td>
-                    <td><a href="">Report</a></td>
+                    <td>${d.deptId}</td>
+                    <td>${d.deptname}</td>
+                    <td><a href="/course/viewcoursebydept/${d.deptId}"> Courses</a></td>
+                    <td><a href="/course/dept/addcourse/${d.deptId}">Add Course</a></td>
+                    <td><a href="/department-report/${d.deptId}">Report</a></td>
                 </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Mechanical Engineering</td>
-                    <td><a href=""> Courses</a></td>
-                    <td><a href="">Report</a></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Civil Engineering</td>
-                    <td><a href=""> Courses</a></td>
-                    <td><a href="">Report</a></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Electronics</td>
-                    <td><a href=""> Courses</a></td>
-                    <td><a href="">Report</a></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Electrical</td>
-                    <td><a href=""> Courses</a></td>
-                    <td><a href="">Report</a></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Paint Technology</td>
-                    <td><a href=""> Courses</a></td>
-                    <td><a href="">Report</a></td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Plastic Technolgoy</td>
-                    <td><a href=""> Courses</a></td>
-                    <td><a href="">Report</a></td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Leather Technology</td>
-                    <td><a href=""> Courses</a></td>
-                    <td><a href="">Report</a></td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Food Technology</td>
-                    <td><a href=""> Courses</a></td>
-                    <td><a href="">Report</a></td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>Bio-Chemical</td>
-                    <td><a href=""> Courses</a></td>
-                    <td><a href="">Report</a></td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>Chemical Engineering</td>
-                    <td><a href=""> Courses</a></td>
-                    <td><a href="">Report</a></td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>Oil Technology</td>
-                    <td><a href=""> Courses</a></td>
-                    <td><a href="">Report</a></td>
-                </tr>
+            </c:forEach>
             </tbody>
         </table>
     </div>

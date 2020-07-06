@@ -1,16 +1,7 @@
 package com.example.demo.controller;
 
-import com.example.demo.Repository.UserRepository;
-import com.example.demo.model.Admin;
-import com.example.demo.model.Course;
-import com.example.demo.model.User;
-import com.example.demo.services.*;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-
-import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class ApplicationController {
@@ -20,17 +11,7 @@ public class ApplicationController {
         return "home.jsp";
     }
 
-//    @RequestMapping("/register")
-//    public String register(){
-//        return "register";
-//    }
-//
-//    @PostMapping("/save-user")
-//    public String registerUser(@ModelAttribute User user, BindingResult bindingResult){
-//        userService.saveMyUser(user);
-//        return "home";
-//    }
-//
+
 //    @GetMapping("/show-users")
 //    public String showRegisteredStudents(HttpServletRequest request){
 //        request.setAttribute("users",userService.showRegisteredStudents());
@@ -49,16 +30,7 @@ public class ApplicationController {
 //        request.setAttribute("user", userService.editUser(id).get());
 //        return "update";
 //    }
-//
-//    @RequestMapping("/login")
-//    public String login(){
-//        return "login.jsp";
-//    }
-//
-//    @RequestMapping("/adminlogin")
-//    public String adminlogin(){
-//        return "adminlogin.jsp";
-//    }
+
 
 //    @RequestMapping ("/login-user")
 //    public String loginUser(@ModelAttribute User user,HttpServletRequest request){
@@ -111,31 +83,11 @@ public class ApplicationController {
 //        return "updatecourse";
 //    }
 
-//    @RequestMapping("/admindashboard")
-//    public String adminDashboard() {
-//        return "admindashboard.jsp";
-//    }
-//
-//    @RequestMapping("/feedback-form")
-//    public String feedbackForm(){
-//        return "feedbackform";
-//    }
-
-//    @PostMapping("/save-result")
-//    public String saveresult(@ModelAttribute FeedbackResult feedbackResult,BindingResult bindingResult){
-//        resultService.savefeedback(feedbackResult);
-//        return "studentdashboard";
-//    }
-
 //    @RequestMapping("/show-results")
 //    public List<FeedbackResult> getAllResults(@RequestParam int courseId){
 //       return resultService.getAllResults(courseId);
 //    }
 
-//    @RequestMapping("/form-user")
-//    public String printResult(@RequestParam int id,HttpServletRequest request){
-//        request.setAttribute("results", resultService.printResult(id).get());
-//        return "printResult";
-//    }
+
 
 }

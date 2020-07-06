@@ -36,4 +36,10 @@ public class CourseService {
         courseRepository.deleteById(course_id);
     }
 
+    public List<Course> findByDept(String dept){
+        List<Course> course;
+        course = courseRepository.findByDepartment(dept);
+        return course;
+    }
+
 }

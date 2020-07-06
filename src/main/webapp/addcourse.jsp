@@ -27,26 +27,27 @@
         <div class="form-group">
             <label class="control-label col-md-3">Course Name</label>
             <div class="col-md-7">
-                <input type="text" class="form-control" name="coursename"/>
+                <input type="text" class="form-control" name="coursename" placeholder="name"/>
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-md-3">Course Id</label>
             <div class="col-md-7">
-                <input type="text" class="form-control" name="subjectid"/>
+                <input type="text" class="form-control" name="subjectid" placeholder="abc-123"/>
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-md-3">Faculty Name</label>
             <div class="col-md-7">
-                <input type="text" class="form-control" name="facultyname"/>
+                <input type="text" class="form-control" name="facultyname" placeholder="name"/>
             </div>
         </div>
 
         <div class="form-group">
             <label class="control-label col-md-3">Contact Number</label>
             <div class="col-md-7">
-                <input type="text" class="form-control" name="contactnumber"/>
+                <input type="number" class="form-control" name="contactnumber" placeholder="" minlength="10" maxlength="10" pattern="[1-9]{1}[0-9]{9}"/><br>
+                <small class="form-text text-muted ">Please ensure its 10 digit number</small>
             </div>
         </div>
 
@@ -54,12 +55,7 @@
             <label class="control-label col-md-3">Department</label>
             <div class="col-md-7">
                 <select class="form-control" name = "department" >
-                    <option value = "CS">Cs</option>
-                    <option value = "Mech">Mech</option>
-                    <option value = "civil">civil</option>
-                    <option value = "electronics">Electronics</option>
-                    <option value = "chemical eng">chemical eng</option>
-                    <option value = "chemical tech">chemical tech</option>
+                    <option value = "${deptname}">${deptname}</option>
                 </select>
             </div>
         </div>
@@ -70,8 +66,6 @@
     </form>
 </div>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
