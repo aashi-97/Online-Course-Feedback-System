@@ -10,12 +10,14 @@
     <title>Log in</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
 </head>
 <body>
 
+
 <div class="container text-center">
     <h3>User Login</h3>
-    <hr>
+    <hr class="one">
     <form class="form-horizontal" method="get" action="/login/verifyuser">
         <c:if test="${not empty error}">
             <div class="alert alert-danger">
@@ -35,12 +37,14 @@
                 <input type="password" class="form-control" name="password" placeholder="pass12"/>
             </div>
         </div>
+
+
         <div class="form-group ">
             <input type="submit" class="btn btn-primary" value="Login" />
         </div>
     </form>
-</div>
 
+</div>
 
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

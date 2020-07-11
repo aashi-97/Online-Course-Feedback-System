@@ -10,6 +10,7 @@
 <html>
 <head>
     <title>User Response</title>
+    <link href="css/printresponse.css" rel="stylesheet">
     <style>
         table,th,td{
             border : 1px solid black;
@@ -31,34 +32,21 @@
     int count4=0;
     int count5=0;
 %>
-<h1>Harcourt Butler Technical University, Kanpur</h1>
-<h3>Office of the Dean, Continuing Education and Internal Quality Assurance</h3>
+<div class="container">
 <h2><u>Students' Feedback Form for Teaching</u></h2>
-<p><i>
-    (Questionaire in this feedback form has been designed to seek feedback of students with an objective
-    to strengthen the quality of teaching-learning environment. Students with attendance more than 75%
-    only need to fill this form)
-</i></p>
-<p><i>Name of the Department:<span aria-label="60 underscores">______________<b>${dname}</b>____________________________________________</span></i></p>
-<p><i>Session:<span aria-label="20 underscores">_________<b>${session}</b>__________</span>
-    Class:<span aria-label="20 underscores">_________<b>${cclass}</b>___________</span>
-    Semester:<span aria-label="20 underscores">________<b>${sem}</b>____________</span></i></p>
-<p><i>Name of the course(with course code):<span aria-label="60 underscores">
-    _____________________<b>${cname}</b>____________________________
-    </span></i></p>
-<p><i>Name of the Teacher:<span aria-label="50 underscores">
-    ____________________________<b>${tname}</b>___________________________________
+<div class="form">
+<p><i>Name of the Department:&nbsp;<b>${dname}</b></i></p>
+<p><i>Session:&nbsp;<b>${session}</b>&emsp;&emsp;
+    Class:&nbsp;<b>${cclass}</b>&emsp;&emsp;
+    Semester:&nbsp;<b>${sem}</b></i></p>
+<p><i>Name of the course(with course code):&nbsp;<b>${cname}</b></i></p>
+<p><i>Name of the Teacher:&nbsp;<b>${tname}</b>
     </span> </i></p>
-<p><i>Total number of Lectures delivered by the Teacher in the Semester:<span aria-label="50 underscores">
-        ____________<b>${totallec}</b>_______________
-    </span> </i></p>
-<p><i>Number of Lectures attended by the Student filling the form with percentage:<span aria-label="30 underscores">
-        _______<b>${lecattended}</b>____________
-    </span> </i></p>
-<p><b>
-    Please rate the parameters on a scale of 5 (5:Excellent,4:Very Good,3:Good,2:Average,1:Poor)
-</b></p>
-<table>
+<p><i>Total number of Lectures delivered by the Teacher in the Semester:&nbsp;<b>${totallec}</b></i></p>
+<p><i>Number of Lectures attended by the Student filling the form with percentage:&nbsp;<b>${lecattended}</b></i></p>
+</div>
+    <br>
+<table align="left">
     <tr>
         <th>Sr.No.</th>
         <th>Description of the item/Questions</th>
@@ -1100,8 +1088,9 @@
         <td><%= count5*5%></td>
     </tr>
 </table>
-
-<input type="submit" value="print" onClick="window.print()"/>
-
+<div class="form">
+<input type="submit" value="Print" style="font-size: 18px" onClick="window.print()"/>
+</div>
+</div>
 </body>
 </html>

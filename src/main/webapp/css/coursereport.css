@@ -1,0 +1,84 @@
+.text p{
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 3%;
+}
+
+h3{
+    font-size: 30px;
+    font-family: Arial;
+    text-align: center;
+    margin-top: 2%;
+}
+hr.one{
+    background: black;
+    height: 2px;
+    border-radius: 10px;
+}
+table{
+    width: 650px;
+    border-collapse: collapse;
+    margin-left: 8%;
+
+}
+tr:nth-of-type(odd) {
+    background: #eee;
+}
+th{
+    background: #015798;
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+}
+td, th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 15px;
+
+}
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+    table {
+        width: 100%;
+    }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { border: 1px solid #ccc; }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        content: attr(data-column);
+        color: #000;
+        font-weight: bold;
+    }
+
+}
+i{
+    font-size: 25px;
+    color: #015798;
+}
+body{
+    background-image: url("../img/h.png");
+}

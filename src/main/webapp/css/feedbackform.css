@@ -1,0 +1,66 @@
+hr.one{
+    border:none;
+    background: green;
+    height: 1px;
+    border-radius : 10px;
+}
+hr.zero{
+    background: darkred;
+    height: 2px;
+    border-radius: 10px;
+}
+.three{
+    font-size: 16px;
+    font-color: black;
+    font-family: Arial;
+    font-weight: normal;
+}
+.radio{
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: middle;
+    color:black;
+}
+p{
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: normal;
+}
+.submit input[type="submit"]{
+    padding: 5px 8px;
+    background-color: #0e90d2;
+    color:#ffffff;
+    border-radius: 6px;
+    border-color: transparent;
+}
+.submit input[type="submit"]:hover{
+
+    transition:0.9s;
+    border-color: black;
+}
+.container h1{
+    font-family: Times New Roman;
+    text-align: left;
+    text-decoration-color: black;
+}
+.container{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding:30px;
+    box-shadow: 0px 0px 10px 0px #000;
+}
+.con label{
+    font-size: 17px;
+}
+
+.con select{
+    border-color: black;
+}
+.con input[type=text]{
+    border-color: black;
+}
+.con input[type=number]{
+    border-color: black;
+}

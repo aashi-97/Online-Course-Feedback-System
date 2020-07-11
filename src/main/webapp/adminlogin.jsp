@@ -18,11 +18,13 @@
     <title>Login</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/adminlogin.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="container text-center">
     <h3>Admin Login</h3>
-    <hr>
+    <hr class="one">
     <form class="form-horizontal" method="get" action="/login/verifyadmin">
         <c:if test="${not empty error}">
             <div class="alert alert-danger">
@@ -39,7 +41,9 @@
         <div class="form-group">
             <label class="control-label col-md-3">Password</label>
             <div class="col-md-7">
+
                 <input type="password" class="form-control" name="password" placeholder="pass12"/>
+
             </div>
         </div>
         <div class="form-group ">

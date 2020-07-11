@@ -10,6 +10,8 @@
     <title>Student Registration</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/register.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -19,7 +21,7 @@
 
     <div class="container text-center">
         <h3>New Registration</h3>
-        <hr>
+        <hr class="one">
         <form class="form-horizontal" method="POST" action="/student/adduser">
             <form :hidden path="id"/>
             <div class="form-group">
@@ -72,7 +74,9 @@
             <div class="form-group">
                 <label class="control-label col-md-3">Password</label>
                 <div class="col-md-7">
+
                     <input type="password" class="form-control" name="password" placeholder="pass12" required/>
+
                 </div>
             </div>
             <div class="form-group ">

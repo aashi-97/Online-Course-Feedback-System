@@ -11,29 +11,23 @@
 <html>
 <head>
     <title>Title</title>
-    <style>
-        table,th,td{
-            border : 1px solid black;
-            border-collapse: collapse;
-        }
-        th{
-            padding: 4px;
-        }
-        td{
-            padding: 3px;
-        }
-    </style>
+    <link href="css/coursereport.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
-
-<h>points which are poor, average, good for : ${cname}</h>
-
-<table>
+<h3 style="color: #015798">Course Report</h3>
+<hr class="one">
+<br>
+<div class="text">
+    <p><i class="fas fa-hand-point-right"></i>     Points which are poor, average, good for :<b> ${cname}</b></p>
+</div>
+<div class="table-responsive">
+<table class="table table-striped table-bordered">
     <thead>
     <tr>
         <th>S.No.</th>
-        <th>points</th>
+        <th>Points</th>
         <th>poor</th>
         <th>average</th>
         <th>good</th>
@@ -667,6 +661,7 @@
         </tr>
     </c:forEach>
 </table>
+</div>
 
 </body>
 </html>

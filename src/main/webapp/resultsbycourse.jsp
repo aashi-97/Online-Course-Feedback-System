@@ -17,12 +17,13 @@
     <title>All Responses</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/resultsbycourse.css" rel="stylesheet">
 </head>
 <body>
 
 <div class="container text-center" id="tasksDiv">
     <h3>All Results</h3>
-    <hr>
+    <hr class="one">
     <div class="table-responsive">
         <table class="table table-striped table-bordered">
             <thead>
@@ -31,7 +32,7 @@
                 <th>username</th>
                 <th>rollnumber</th>
                 <th>Email id</th>
-                <th>password</th>
+                <th>Password</th>
                 <th>ResultId</th>
                 <th>Print Result</th>
 
@@ -46,7 +47,7 @@
                     <td>${r.user.email}</td>
                     <td>${r.user.password}</td>
                     <td>${r.resultId}</td>
-                    <td><a href="/results/viewresultbyResultId/${r.resultId}">View Response</a></td>
+                    <td><a href="/results/viewresultbyResultId/${r.resultId}" style="color: darkmagenta">View Response</a></td>
                 </tr>
             </c:forEach>
             </tbody>

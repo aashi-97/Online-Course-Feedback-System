@@ -9,17 +9,24 @@
 <html>
 <head>
     <title>Failed</title>
+    <link href="css/failed.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
 <div class="container">
     <div class="row text-center">
         <div class="col-sm-6 col-sm-offset-3">
-            <br><br> <h2 style="color: darksalmon">Failed to Add</h2>
-            <br>
-            <p style="color: darksalmon; font-size: large; font-family: Arial">Something went wrong.</p><br><br>
-            <p style="color: darksalmon; font-size: large; font-family: Arial">${contactnumber} ${subjectid} already exists.</p><br><br>
-            <a href="addcourse.jsp" action="addcourse.jsp" class="btn btn-primary" style="font-size: medium"> Try Again! </a>
+            <div class="three">
+                <p> <i class="far fa-times-circle"></i> Failed to Add</p>
+            </div>
+            <div class="one">
+            <p style=" font-family: Arial">Sorry, Something went wrong.</p>
+            </div>
+            <div class="two">
+            <p style=" font-family: Arial">${contactnumber} ${subjectid} already exists.</p>
+            </div>
+            <a href="addcourse.jsp" action="addcourse.jsp" class="btn btn-primary" style="font-size: large"> Try Again! </a>
             <br><br>
         </div>
 

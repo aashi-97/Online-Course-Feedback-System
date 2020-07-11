@@ -15,12 +15,13 @@
     <title>Added Courses</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/addedcourses.css" rel="stylesheet">
 </head>
 <body>
 
 <div class="container text-center" id="tasksDiv">
     <h3>All Courses</h3>
-    <hr>
+    <hr class="one">
     <div class="table-responsive">
         <table class="table table-striped table-bordered">
             <thead>
@@ -33,7 +34,7 @@
                 <th>Department</th>
                 <th>Delete</th>
                 <th>Edit</th>
-                <th>click to view all responses</th>
+                <th>View Responses</th>
                 <th>Report</th>
             </tr>
             </thead>
@@ -48,8 +49,8 @@
                     <td>${c.department}</td>
                     <td><a href="/course/delete/${c.courseId}"><i class="icon-trash"></i></a></td>
                     <td><a href="/course/viewcoursebyid/${c.courseId}"><i class="icon-pencil"></i></a></td>
-                    <td><a href="/course/viewresultbyCourseId/${c.courseId}">Ressponses</a></td>
-                    <td><a href="/course/viewreport/${c.courseId}">Report</a></td>
+                    <td><a href="/course/viewresultbyCourseId/${c.courseId}" style="color:darkmagenta">Responses</a></td>
+                    <td><a href="/course/viewreport/${c.courseId}" style="color:darkmagenta">Report</a></td>
                 </tr>
             </c:forEach>
             </tbody>

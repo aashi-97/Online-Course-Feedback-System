@@ -10,6 +10,7 @@
     <title>Add Course</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/addcourse.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -21,7 +22,7 @@
 
 <div class="container text-center">
     <h3>Add Course Details</h3>
-    <hr>
+    <hr class="one">
     <form class="form-horizontal" method="POST" action="/course/addcourse">
         <form :hidden path="id"/>
         <div class="form-group">
@@ -47,8 +48,10 @@
             <label class="control-label col-md-3">Contact Number</label>
             <div class="col-md-7">
                 <input type="number" class="form-control" name="contactnumber" placeholder="" minlength="10" maxlength="10" pattern="[1-9]{1}[0-9]{9}"/><br>
-                <small class="form-text text-muted ">Please ensure its 10 digit number</small>
-            </div>
+                <div class="two">
+                <small class="form-text text-muted " >Please ensure its 10 digit number</small>
+                </div>
+                </div>
         </div>
 
         <div class="form-group">

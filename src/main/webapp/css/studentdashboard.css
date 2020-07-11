@@ -1,0 +1,117 @@
+.screen h2{
+    font-family: Arial;
+    font-size: 40px;
+    text-align: center;
+}
+.screen p{
+    font-size: 21px;
+
+}
+.screen button{
+    margin: 6% 1%;
+    padding: 8px 10px;
+    background-color: #0e90d2;
+    color: black;
+    border-radius: 6px;
+    font-size: 18px;
+    border-color: transparent;
+    font-weight: bold;
+}
+.screen button:hover{
+    border-color: black;
+
+}
+.screen a{
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.screen h3{
+    font-size: 30px;
+    font-family: Arial;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+.screen hr {
+    border:none;
+    background: darkblue;
+    height: 1px;
+    border-radius : 10px;
+    margin-left: 20%;
+    width :50%;
+}
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0;
+}
+.form-group input[type="submit"]{
+    background: #015798;
+    height: 40px;
+    line-height: 35px;
+    width: 28%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+    transition: all 0.30s ease-in-out;
+    margin-top: 4%;
+}
+.form-group input[type="text"]{
+    width: 30%;
+    height: 35px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.30s ease-in-out;
+
+}
+.form-group input[type="password"]{
+    width: 30%;
+    height: 35px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.30s ease-in-out;
+}
+.col-md-7{
+    margin: 14px;
+}
+hr.one{
+    border:none;
+    background: darkblue;
+    height: 1px;
+    border-radius : 10px;
+    margin-left: 20%;
+    width :60%;
+}
+.form-group label{
+    font-size: 18px;
+}
+.title_container {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.container {
+    background: #fff;
+    width: 300px;
+    max-width: 80%;
+    box-sizing: border-box;
+    padding: 25px;
+    margin: 6% auto 0;
+    position: relative;
+    border-top: 5px solid #ffffff;
+
+}
+
+i{
+    font-size: 23px;
+    color: black;
+    font-weight: bold;
+}

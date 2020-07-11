@@ -1,0 +1,29 @@
+.three p{
+    font-size: 30px;
+    margin-top:6%;
+    font-weight: bold;
+    color: indianred;
+}
+.one p{
+    font-size: 30px;
+    margin-left:35%;
+    color: cornflowerblue;
+}
+a{
+    margin-left:58%;
+    color: darkmagenta;
+}
+.two p{
+    font-size: 20px;
+    margin-left:35%;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+i{
+    font-size:30px;
+    margin-left: 35%;
+    margin-top: 6%;
+}
+body{
+    background-image: url("../img/h.png");
+}

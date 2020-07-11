@@ -10,26 +10,18 @@
 <html>
 <head>
     <title>Departmental Report</title>
-    <style>
-        table,th,td{
-            border : 1px solid black;
-            border-collapse: collapse;
-        }
-        th{
-            padding: 4px;
-        }
-        td{
-            padding: 3px;
-        }
-    </style>
+    <link href="css/chart.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
 <div id="container" style="height: 400px;"></div>
 
 
 
-<p>Details of the Course with the best score in the ${dname}</p>
+<p><i class="fas fa-hand-point-right"></i>    Details of the Course with the best score in the <b>${dname}</b></p>
 
+<div class="table-responsive">
 <table>
     <thead>
     <tr>
@@ -46,7 +38,7 @@
     </c:forEach>
     </tbody>
 </table>
-
+</div>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>

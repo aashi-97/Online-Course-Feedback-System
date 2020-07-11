@@ -1,5 +1,5 @@
 .invisible-at-first {
-	display: none;
+    display: none;
 }
 
 
@@ -41,7 +41,7 @@
 	left:0;
 	top:0;
 	width:100px;
-	background:#1fc058;
+	background:#015798;
 	height:100%;
 	display:flex;
 	justify-content:center;
@@ -176,7 +176,7 @@ h2:after{
 	position:absolute;
 	width:70px;
 	height:5px;
-	background:#1fc058;
+	background:#015798;
 	left:calc(50% - 35px);
 	bottom:-15px;
 }

@@ -1,0 +1,18 @@
+.title h1{
+    text-align: center;
+    margin-top: 20%;
+   margin-right: 2%;
+}
+h3{
+    font-size: 35px;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    padding:8px;
+    box-shadow: 0px 0px 10px #015798;
+    width: 35%;
+    height: 10%;
+    margin-left: 32%;
+
+}
+

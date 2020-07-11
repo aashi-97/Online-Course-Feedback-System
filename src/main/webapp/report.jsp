@@ -10,26 +10,22 @@
 <html>
 <head>
     <title>Report</title>
-    <style>
-        table,th,td{
-            border : 1px solid black;
-            border-collapse: collapse;
-        }
-        th{
-            padding: 4px;
-        }
-        td{
-            padding: 3px;
-        }
-    </style>
+    <link href="css/report.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
 
-<h2><u>Analysis Report</u></h2>
+<h3 style="color: #015798">Analysis Report</h3>
+<hr class="one">
+<br>
+<div class="text">
+<p><i class="fas fa-hand-point-right"></i>    Details of the Course having best score in the university</p>
+</div>
 
-<p>Details of the Course having best score in the university</p>
+<div class="table-responsive">
+    <table class="table table-striped table-bordered">
 
-<table>
     <thead>
     <tr>
         <th>Best courses in the university</th>
@@ -44,12 +40,15 @@
         </tr>
     </c:forEach>
     </tbody>
-</table>
+</table><br><br>
+</div>
 
+<div class="text">
+<p><i class="fas fa-hand-point-right"></i>    Details of the Department having overall highest score aggregated over all the courses</p>
+</div>
 
-<p>Details of the Department having overall highest score aggregated over all the courses</p>
-
-<table>
+<div class="table-responsive">
+    <table class="table table-striped table-bordered">
     <thead>
     <tr>
         <th>Department</th>
@@ -64,11 +63,15 @@
             </tr>
         </c:forEach>
             </tbody>
-</table>
+</table><br><br>
+</div>
 
-<p>Details of the Department having overall lowest score aggregated over all the courses</p>
+<div class="text">
+<p><i class="fas fa-hand-point-right"></i>    Details of the Department having overall lowest score aggregated over all the courses</p>
+</div>
 
-<table>
+<div class="table-responsive">
+    <table class="table table-striped table-bordered">
         <thead>
         <tr>
             <th>Department</th>
@@ -84,6 +87,6 @@
         </c:forEach>
         </tbody>
 </table>
-
+</div>
 </body>
 </html>

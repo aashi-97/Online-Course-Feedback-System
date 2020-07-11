@@ -13,15 +13,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/admindashboard.css" rel="stylesheet">
 
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            background-image: url("../img/h.png");
+
         }
 
         .navbar {
             overflow: hidden;
-            background-color: #333;
+            background-color: black;
+
         }
 
         .navbar a {
@@ -32,19 +37,22 @@
             padding: 14px 16px;
             text-decoration: none;
         }
+        .navbar a:hover{
+            background-color: skyblue;
+        }
 
         .logout {
             float: right;
             overflow: hidden;
         }
         .logout .logoutbtn {
-            font-size: 16px;
+            font-size: 20px;
             border: none;
             outline: none;
             color: white;
             padding: 14px 16px;
             background-color: inherit;
-            font-family: inherit;
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
         }
     </style>
@@ -52,24 +60,23 @@
 
 </head>
 <body>
-<h1> hey admin !</h1>
+
 <div class="navbar">
     <div class="logout">
         <a href="home.jsp" class="logoutbtn">Logout</a>
     </div>
 </div>
-
-
+<div class="three">
+<h1> Welcome admin !</h1>
+</div>
 
 <%--<a href="/course/viewcourse"> Show All Courses</a>--%>
 
 <%--<a href="chart.jsp">Overall Average</a>--%>
 
-<a href="/overall-report">Overall Feedback Analysis Report</a>
-
 <div class="container text-center" id="tasksDiv">
     <h3>All Departments</h3>
-    <hr>
+    <hr class="one">
     <div class="table-responsive">
         <table class="table table-striped table-bordered">
             <thead>
@@ -94,6 +101,11 @@
             </tbody>
         </table>
     </div>
+</div>
+<br>
+<div class="text">
+    <i class="fas fa-location-arrow"></i>
+    <a href="/overall-report">Overall Feedback Analysis Report</a>
 </div>
 
 </body>

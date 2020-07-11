@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/studentdashboard.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+
+
     <title>Students' Dashboard</title>
     <style>
         *,*:before,*:after{
@@ -56,9 +60,9 @@
     <div class="content-wrapper">
         <div id="screen_0" class="screen visible">
             <h2>Students' Feedback Form</h2>
-            Hey! ${username}. Your feedback matters a lot in improving our learning teaching process.
+            <p>Hey!&nbsp;<b>${username}</b>. Your feedback matters a lot in improving our learning teaching process.</p>
             <form action="/fillform/<%=id%>" method="get">
-                <button>Click here to give feedback</button>
+                <button><i class="far fa-arrow-alt-circle-right"></i>  Click here to give feedback</button>
             </form>
         </div>
 
@@ -98,7 +102,7 @@
 
         <div id="screen_2" class="screen">
             <h2>Log out!</h2>
-            <p>Thank You, for giving your valuable feedback.We will look forward to your feedback.</p>
+            <p><b>Thank You</b>, for giving your valuable feedback.We will look forward to your feedback.</p>
             <a href="/">Exit</a>
         </div>
 

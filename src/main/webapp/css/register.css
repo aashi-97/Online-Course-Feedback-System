@@ -1,0 +1,100 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    background: #f2f2f2;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0;
+}
+.container {
+    background: #fff;
+    width: 620px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    margin: 4% auto 0;
+    position: relative;
+    border-top: 5px solid #015798;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    transition: none;
+    transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    transform: scale3d(1, 1, 1);
+}
+.title_container {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.form-group input[type="submit"]{
+    background: #015798;
+    height: 40px;
+    line-height: 35px;
+    width: 70%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+    transition: all 0.30s ease-in-out;
+    margin-top: 4%;
+}
+
+.form-group input[type="text"]{
+    width: 50%;
+    height: 35px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.30s ease-in-out;
+
+}
+.form-group input[type="email"]{
+    width: 50%;
+    height: 35px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.30s ease-in-out;
+}
+.form-group input[type="password"] {
+    width: 50%;
+    height: 35px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.30s ease-in-out;
+}
+
+
+.form-group label{
+    font-size: 18px;
+}
+select {
+    display: inline-block;
+    width: 50%;
+    height: 35px;
+    cursor: pointer;
+    color: #7b7b7b;
+    border: 1px solid grey;
+    border-radius: 0;
+    background: #fff;
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+.col-md-7{
+    margin: 14px;
+}
+hr.one{
+    border:none;
+    background: darkblue;
+    height: 1px;
+    border-radius : 10px;
+    margin-left: 20%;
+    width :60%;
+}
+body{
+    background-image: url("../img/h.png");
+}
