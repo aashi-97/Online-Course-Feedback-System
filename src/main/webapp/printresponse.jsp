@@ -45,6 +45,12 @@
 <p><i>Total number of Lectures delivered by the Teacher in the Semester:&nbsp;<b>${totallec}</b></i></p>
 <p><i>Number of Lectures attended by the Student filling the form with percentage:&nbsp;<b>${lecattended}</b></i></p>
 </div>
+ <hr>
+    <br>
+    <div class="form">
+        <input type="submit" value="Print" style="font-size: 18px" onClick="window.print()"/>
+    </div>
+    <br>
     <br>
 <table align="left">
     <tr>
@@ -1088,9 +1094,7 @@
         <td><%= count5*5%></td>
     </tr>
 </table>
-<div class="form">
-<input type="submit" value="Print" style="font-size: 18px" onClick="window.print()"/>
-</div>
+
 </div>
 </body>
 </html>

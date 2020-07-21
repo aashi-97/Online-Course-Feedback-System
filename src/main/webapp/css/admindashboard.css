@@ -87,11 +87,13 @@ i{
     color: darkmagenta;
 }
 .three{
-    background-color: #ffffff;
+    background-color: none;
     border-radius: 12px;
+
     padding:8px;
-    box-shadow: 0px 0px 10px #015798;
-    width: 24%;
-    height: 8%;
-    margin-left: 37%;
+    box-shadow: 0px 0px 5px #015798;
+    width: auto;
+    height: auto;
+
+
 }

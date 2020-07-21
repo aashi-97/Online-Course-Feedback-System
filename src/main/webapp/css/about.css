@@ -30,4 +30,8 @@ h2{
 body{
     background-image: url("../img/about.png");
     font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }

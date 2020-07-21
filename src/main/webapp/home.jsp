@@ -20,6 +20,10 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             background-image: url("../img/home.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
         }
 
         .navbar {
