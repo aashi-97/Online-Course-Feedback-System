@@ -52,10 +52,19 @@
 <%--                        <option value= "">Select</option>--%>
                         <option value = "Computer Science and Information Technology">Computer Science and Information Technology</option>
                         <option value = "Mechanical Engineering">Mechanical Engineering</option>
-                        <option value = "Electronics and Electrical Engineering">Electronics and Electrical Engineering</option>
+                        <option value = "Electronics">Electronics</option>
+                        <option value = "Electrical Enginerring">Electrical Engineering</option>
                         <option value = "Civil Engineering">Civil Engineering</option>
                         <option value = "Chemical Engineering">Chemical Engineering</option>
-                        <option value = "Chemical Technology">Chemical Technology</option>
+                        <option value = "Plastic Technology">Plastic Technology</option>
+                        <option value = "Paint Technology">Paint Technology</option>
+                        <option value = "Food Technology">Food Technology</option>
+                        <option value = "Oil Technology">Oil Technology</option>
+                        <option value = "Bio-Chemical Technology">Bio-chemical Technology</option>
+                        <option value = "Leather Technology">Leather Technology</option>
+                        <option value = "Mathematics">Mathematics</option>
+                        <option value = "Physics">Physics</option>
+                        <option value = "Humanitites">Humanities</option>
                     </select>
                 </div>
             </div>

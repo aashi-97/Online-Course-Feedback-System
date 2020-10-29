@@ -15,6 +15,7 @@
     <title>Update-Course</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/updatecourse.css" rel="stylesheet">
 </head>
 <body>
 <% long id = Long.parseLong(request.getParameter("id")); %>

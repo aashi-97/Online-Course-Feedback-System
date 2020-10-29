@@ -57,6 +57,7 @@ p{
 
 .con select{
     border-color: black;
+    color: black;
 }
 .con input[type=text]{
     border-color: black;
